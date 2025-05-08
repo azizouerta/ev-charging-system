@@ -1,0 +1,32 @@
+[
+    {
+        "id": "Car_1",
+        "capacity_kWh": 70,
+        "max_charge_rate_kW": 20,
+        "efficiency": 0.95
+    },
+    {
+        "id": "Car_2",
+        "capacity_kWh": 50,
+        "max_charge_rate_kW": 15,
+        "efficiency": 0.95
+    },
+    {
+        "id": "Car_3",
+        "capacity_kWh": 55,
+        "max_charge_rate_kW": 20,
+        "efficiency": 0.95
+    },
+    {
+        "id": "Car_4",
+        "capacity_kWh": 70,
+        "max_charge_rate_kW": 20,
+        "efficiency": 0.95
+    },
+    {
+        "id": "Car_5",
+        "capacity_kWh": 50,
+        "max_charge_rate_kW": 15,
+        "efficiency": 0.95
+    }
+]
