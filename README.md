@@ -7,15 +7,15 @@ This Python script manages charging and billing for 5 electric vehicles (EVs) us
 - Final SoC per car.
 
 ## Inputs
-- `cars.json`: EV details (ID, capacity_kWh, max_charge_rate_kW).
-- `availability.csv`: Car availability (cars × hours, 1 = available).
-- `requirements.json`: SoC targets per car and day.
-- `prices.csv`: Hourly prices (€/kWh).
+- `input/cars.json`: EV details (ID, capacity_kWh, max_charge_rate_kW).
+- `input/availability.csv`: Car availability (cars × hours, 1 = available).
+- `input/requirements.json`: SoC targets per car and day.
+- `input/prices.csv`: Hourly prices (€/kWh).
 
 ## Outputs
-- `charging_schedule.csv`: Day, Hour, Port, Car_ID, Power_kW.
-- `cost_summary.csv`: Car_ID, Day, Hour, Cost_EUR (includes daily and total costs).
-- `final_soc.csv`: Car_ID, Final_SoC (%).
+- `output/charging_schedule.csv`: Day, Hour, Port, Car_ID, Power_kW.
+- `output/cost_summary.csv`: Car_ID, Day, Hour, Cost_EUR (includes daily and total costs).
+- `output/final_soc.csv`: Car_ID, Final_SoC (%).
 
 ## Assumptions
 - **Initial SoC**: All cars start at 20% SoC (e.g., target SoC - 0.2 × capacity, adjusted for 95% efficiency).
@@ -30,7 +30,7 @@ This Python script manages charging and billing for 5 electric vehicles (EVs) us
 - Dependencies: `pandas`, `numpy`
 
 ### Setup
-1. Place input files (`cars.json`, `availability.csv`, `requirements.json`, `prices.csv`) in the same directory as `ev_charging.py`.
+1. Create an `input` folder and place input files (`cars.json`, `availability.csv`, `requirements.json`, `prices.csv`) in `input/`.
 2. Install dependencies:
    ```bash
    pip install pandas numpy
